@@ -1,0 +1,20 @@
+
+.header{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list,
+.header__navbar-menu{
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    align-items: center;
+}

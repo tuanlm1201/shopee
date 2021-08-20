@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="main">
         <header class="header">
-            <nav class="header__navbar">
-                <ul class="header__navbar">
-                    <li class="header__navbar-item"></li>
-                    <li class="header__navbar-item"></li>
+            <nav class="header__navbar grid">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item">Kênh Người Bán</li>
+                    <li class="header__navbar-item">Trở thành Người bán Shopee</li>
+                    <li class="header__navbar-item">Tải ứng dụng</li>
+                    <li class="header__navbar-item">
+                        Kết nối
+                        <span class="navbar-item__social">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </span>
+                        <span class="navbar-item__social">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="header__navbar-menu">
+                    <li class="header__navbar-menuItem">
+                        <ion-icon name="notifications-outline"></ion-icon> Thông báo
+                    </li>
+                    <li class="header__navbar-menuItem">
+                        <ion-icon name="help-circle-outline"></ion-icon> Hỗ trợ
+                    </li>
+                    <li class="header__navbar-menuItem">Đăng kí</li>
+                    <li class="header__navbar-menuItem">Đăng nhập</li>
                 </ul>
             </nav>
             <div class="header__search">
@@ -30,4 +58,5 @@
         </footer>
     </div>
 </body>
+
 </html>

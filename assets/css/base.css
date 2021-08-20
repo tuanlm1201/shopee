@@ -2,16 +2,19 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --orange-color: #fb6445;
 }
 
 *{
     box-sizing: inherit;
+    margin: 0;
 }
 
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .grid{
