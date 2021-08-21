@@ -9,7 +9,6 @@
 *{
     box-sizing: inherit;
     margin: 0;
-    padding: 0;
 }
 
 html{
@@ -28,4 +27,13 @@ html{
 .grid__full-width{
     display: flex;
     flex-wrap: wrap;
+}
+
+@keyframes fadeIn{
+    from { 
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
