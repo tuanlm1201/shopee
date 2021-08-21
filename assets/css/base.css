@@ -3,11 +3,13 @@
     --black-color: #000;
     --text-color: #333;
     --orange-color: #fb6445;
+    --border-color: rgba(255, 255, 255, 0.22);
 }
 
 *{
     box-sizing: inherit;
     margin: 0;
+    padding: 0;
 }
 
 html{

@@ -1,10 +1,14 @@
-
+/*------------------Start Header-----------------*/
 .header{
-    background-color: var(--orange-color);
     color: var(--white-color);
 }
 
+.header.header--bg-linear{
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+
 .header__navbar{
+    min-height: 3.4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -14,7 +18,60 @@
     display: flex;
     list-style: none;
     font-size: 13px;
-    font-weight: 300;
-    line-height: 1.5rem;
     align-items: center;
+}
+
+.header__navbar-item,
+.header__navbar-menuItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid var(--border-color);
+}
+
+.header__navbar-item>a,
+.header__navbar-menuItem{
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 0 7px;
+    text-align: center;
+}
+
+.header__navbar-item:last-child,
+.header__navbar-menuItem:last-child{
+    border-right: 0;
+    padding-left: 7px;
+}
+
+.header__navbar-item .navbar-item__social:first-child{
+    padding-left: 7px;
+}
+
+.header__navbar-item .navbar-item__social>span{
+    display: block;
+    margin: 0px auto;
+    font-size: 2rem;
+}
+
+.header__search{
+    display: flex;
+    padding: 16px 0px 10px
+}
+
+.header-search__logo{
+    display: block;
+    width: 162px;
+    height: 50px;
+}
+
+.header-search__logo .header-search__icon{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+}
+/*------------------End Header-----------------*/
+
+.container{
+    height: 1vh;
 }
