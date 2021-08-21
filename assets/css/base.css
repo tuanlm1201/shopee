@@ -2,6 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --text-colorOrange: #ee4d2d;
     --orange-color: #fb6445;
     --border-color: rgba(255, 255, 255, 0.22);
 }
@@ -27,6 +28,10 @@ html{
 .grid__full-width{
     display: flex;
     flex-wrap: wrap;
+}
+
+.btn{
+    line-height: 3rem;
 }
 
 @keyframes fadeIn{

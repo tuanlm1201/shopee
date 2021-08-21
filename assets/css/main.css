@@ -44,6 +44,10 @@
     display: block;
 }
 
+.header__navbar-item--notify:hover .header__notify{
+    display: block;
+}   
+
 .header__navbar-item--bold{
     font-weight: 500;
 }
@@ -70,7 +74,7 @@
     color: var(--white-color);
 }
 
-/* QR code*/
+/*-------------- QR code ----------------*/
 .header__qr{
     position: absolute;
     top: calc(100% + 10px);
@@ -121,4 +125,93 @@
 .header__qr-dowload{
     object-fit: cover;
     width: 100%;
+}
+
+
+/*---------------- Notify --------------*/
+.header__navbar-item--notify{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.header__notify{
+    width: 400px;
+    position: absolute;
+    top: calc(100% + 15px);
+    right: 0;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 5px rgba(94, 93, 93, 0.7);
+    cursor: default;
+    display: none;
+    transform-origin: 90% top;
+    animation: header__notifyGrow linear .3s;
+    border-radius: 3px;
+}
+
+@keyframes header__notifyGrow{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(45deg);
+    }
+}
+
+.header__notify::before{
+    content: "";
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: var(--white-color);
+    position: absolute;
+    top: -4px;
+    right: 15px;
+}
+
+.header__notify::after{
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.header__notify-content{
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__notify-img{
+    height: 100px;
+    width: 100px;
+}
+
+.header__notify-title{
+    color: var(--black-color);
+    font-size:  1.4rem;
+}
+
+.header__notify-control{
+    display: flex;
+}
+
+.header__notify-control>a{
+    display: block;
+    width: 50%;
+    background-color: #d8d6d6;
+    color: var(--black-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+}
+
+.header__notify-control>.btn:hover{
+    color: var(--text-colorOrange);
+    background-color: #e8e8e8;
+    transition: linear .3s;
 }
