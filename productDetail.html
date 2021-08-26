@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopee</title>
+    <title>Product Detail</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- <link rel="stylesheet" href="./assets/css/base.css"> -->
+    <link rel="stylesheet" href="./assets/css/productDetail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -21,16 +21,20 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--separate"><a href="#" class="header__navbar-item-link">Kênh Người Bán</a></li>
-                        <li class="header__navbar-item header__navbar-item--separate"><a href="#" class="header__navbar-item-link">Trở thành Người bán
+                        <li class="header__navbar-item header__navbar-item--separate"><a href="#"
+                                class="header__navbar-item-link">Kênh Người Bán</a></li>
+                        <li class="header__navbar-item header__navbar-item--separate"><a href="#"
+                                class="header__navbar-item-link">Trở thành Người bán
                                 Shopee</a></li>
                         <li class="header__navbar-item header__navbar-item--qr header__navbar-item--separate">
                             <a href="#" class="header__navbar-item-link">Tải ứng dụng</a>
                             <div class="header__qr">
                                 <img src="./assets/img/qr_code.png" alt="" class="header__qr-img">
                                 <div class="header__qr-apps">
-                                    <a href="" class="header__qr-link"><img src="./assets/img/ios.png" alt="" class="header__qr-dowload"></a>
-                                    <a href="" class="header__qr-link"><img src="./assets/img/google_play.png" alt="" class="header__qr-dowload"></a>
+                                    <a href="" class="header__qr-link"><img src="./assets/img/ios.png" alt=""
+                                            class="header__qr-dowload"></a>
+                                    <a href="" class="header__qr-link"><img src="./assets/img/google_play.png" alt=""
+                                            class="header__qr-dowload"></a>
                                 </div>
                             </div>
                         </li>
@@ -111,286 +115,51 @@
         <!-------------------------------------- Container -------------------------------------------->
         <div class="container">
             <div class="grid">
-                <div class="product">
-                    <div class="product__suggest">
-                        <div class="product__suggest-tab product__suggest-tab--active">
-                            <span>Gợi ý Hôm nay</span>
-                        </div>
-                        <div class="product__suggest-tab">
-                            <a href="#">
-                                <img src="./assets/img/heading_suggest.png" alt="Image Suggest" srcset="" class="product__suggest-tab-img">
-                            </a>
-                        </div>
-                    </div>
+                <!----------------- Bread crumbs -------------------->
+                <div class="breadcrumb">
+                    <a href="#">Shopee</a>
+                    <span><i class="fas fa-angle-right"></i></span>
+                    <span>Thực phẩm và đồ uống</span>
+                    <span><i class="fas fa-angle-right"></i></span>
+                    <span>Thực phẩm tươi sống và đồ đông lạnh</span>
+                    <span><i class="fas fa-angle-right"></i></span>
+                    <span>Thực phẩm đông lạnh chế biến sẵn</span>
+                    <span><i class="fas fa-angle-right"></i></span>
+                    <span>Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now
+                    </span>
+                </div>
+
+                <!------------------ Product Detail --------------->
+                <div class="product-detail">
                     <div class="row">
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
+                        <div class="col col-5">
+                            <div class="product-detail__img"></div>
+                        </div>
+                        <div class="col col-7">
+                            <div class="product-detail__content">
+                                <div class="product-detail__content-heading">
+                                    <span class="product-detail__content-favorite">Yêu thích</span>
+                                    <span>Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</span>
                                 </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
+                                <div class="product-detail-rating">
+                                    <div class="product-detail-rating__star">
+                                        <div class="product-detail-rating__star-point">5</div>
+                                        <div class="product-detail-rating__star-wapper"><i class="fas fa-star"></i></div>
+                                        <div class="product-detail-rating__star-wapper"><i class="fas fa-star"></i></div>
+                                        <div class="product-detail-rating__star-wapper"><i class="fas fa-star"></i></div>
+                                        <div class="product-detail-rating__star-wapper"><i class="fas fa-star"></i></div>
+                                        <div class="product-detail-rating__star-wapper"><i class="fas fa-star"></i></div>
+                                    </div>
+                                    <div class="product-detail-rating__comment">
+                                        <p class="product-detail-rating__comment-point">794</p>
+                                        <span>Đánh giá</span>
+                                    </div>
+                                    <div class="product-detail-rating__sold">
+                                        <p class="product-detail-rating__sold-point">2k</p>
+                                        <span>đã bán</span>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-2">
-                            <a class="product-items" href="/">
-                                <div class="product-items__img" style="background: url('https://cf.shopee.vn/file/4da67050ab678da471ac8cf1493a1a39_tn') top center / cover no-repeat;">
-                                </div>
-                                <div class="product-items__favorite"><span>Yêu thích</span></div>
-                                <div class="product-items__sale">
-                                    <span class="product-items__sale-precent">20%</span>
-                                    <span class="">Giảm</span>
-                                </div>
-                                <div class="product-items__content">
-                                    <h4 class="product-items__heading">Combo tart trứng(bao gồm 30 đế bánh tart+kem trứng)ship hỏa tốc grap,now</h4>
-                                    <div class="product-items__tickets" style="color: white; background-color: rgb(246, 145, 19);">Giảm ₫15k</div>
-                                    <div class="product-items__bottom">
-                                        <p class="product-items__price"><span>đ</span>68.000</p>
-                                        <span class="product-items__sold">Đã bán 2k</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-12">
-                            <a href="" class="btn btn_learn-more">Xem thêm</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -502,7 +271,8 @@
                             <ul class="footer-list">
                                 <li class="footer-list__items">
                                     <a href="#">
-                                        <p><span><i class="footer-list__items-icons fab fa-facebook"></i></span>Facebook</p>
+                                        <p><span><i class="footer-list__items-icons fab fa-facebook"></i></span>Facebook
+                                        </p>
                                     </a>
                                 </li>
                                 <li class="footer-list__items">
@@ -522,7 +292,8 @@
                             <ul class="footer-list row">
                                 <li class="footer-list__items col col-6">
                                     <a href="#">
-                                        <img class="footer-list__img-dowload" src="./assets/img/qr_code-footer.png" alt="" srcset="">
+                                        <img class="footer-list__img-dowload" src="./assets/img/qr_code-footer.png"
+                                            alt="" srcset="">
                                     </a>
                                 </li>
                                 <li class="footer-list__items col col-6">
